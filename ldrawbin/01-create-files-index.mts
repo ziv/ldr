@@ -10,7 +10,7 @@ import {walk} from "./shared/walk.mjs";
 let id = 0;
 const map: Record<string, number> = {};
 
-for await (const file of walk("./db")) {
+for await (const file of walk("./ldrawdb")) {
     if (!file.endsWith(".ldr") && !file.endsWith(".dat")) {
         continue;
     }

@@ -33,7 +33,7 @@ tsx ldrawbin/02-create-inverse-files-index.mts > ldrawdb/rindex.json
 tsx ldrawbin/03-create-colors.mts > ldrawdb/colors.json
 ```
 
-## Phase 02: Convert Existing LDraw Files to JSON
+## Phase 04: Convert Existing LDraw Files to JSON
 
 In order to facilitate the design of the binary file format, we will first convert the existing LDraw files into a
 structured JSON format. This will allow us to analyze the data and identify patterns that can be optimized in the binary
@@ -45,10 +45,10 @@ metadata, while excluding any redundant or non-essential information.
 Currently, support lines of type 1, 3, 4.
 
 ```shell
-tsx tools/03-database-to-json.mts
+tsx tools/04-database-to-json.mts
 ```
 
-## Phase 03: Binary File Format
+## Phase 05: Binary File Format
 
 Each JSON file will be converted into a binary file using the following structure:
 

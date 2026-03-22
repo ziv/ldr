@@ -24,7 +24,7 @@ function fileIndex(path: string): number {
 }
 
 let i = 0;
-for await (const file of walk('./db')) {
+for await (const file of walk('./ldrawdb')) {
     if (!file.endsWith('.dat')) {
         continue;
     }
