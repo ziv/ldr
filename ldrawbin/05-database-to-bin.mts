@@ -9,10 +9,14 @@ for await (const file of walk('./ldrawdb')) {
     if (!file.endsWith('.json')) {
         continue;
     }
+    if (file.endsWith('colors.json') || file.endsWith('index.json') || file.endsWith('rindex.json')) {
+        continue;
+    }
 
     const raw = await fs.readFile(file, 'utf-8');
     const jsonArray = JSON.parse(raw) as LdrLine[];
 
+    // counting data
     let totalBytes = 0;
     for (const row of jsonArray) {
         const type = row[0] as number;
@@ -21,10 +25,11 @@ for await (const file of walk('./ldrawdb')) {
         else if (type === 4) totalBytes += 53; // 1 + 4 + (12 * 4)
     }
 
-
+    // allocating memory
     const buf = Buffer.alloc(totalBytes);
     let offset = 0;
 
+    // writing data to buffer
     for (const row of jsonArray) {
         const type = row[0] as number;
 
