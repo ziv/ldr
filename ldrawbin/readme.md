@@ -1,4 +1,4 @@
-# Binary LDraw File Format
+# JSON and Binary LDraw File Format
 
 ## Overview
 
@@ -16,7 +16,7 @@ between the two formats.
 The script create a map between all files and their id (auto incrementing integer).
 
 ```shell
-tsx tools/01-create-files-index.mts > db/index.json
+tsx ldrawbin/01-create-files-index.mts > ldrawdb/index.json
 ```
 
 ## Phase 02: Create Reverse Index
@@ -24,7 +24,13 @@ tsx tools/01-create-files-index.mts > db/index.json
 Index that map ID to file path.
 
 ```shell
-tsx tools/02-create-inverse-files-index.mts > db/rindex.json
+tsx ldrawbin/02-create-inverse-files-index.mts > ldrawdb/rindex.json
+```
+
+## Phase 03: Create Colors Index
+
+```shell
+tsx ldrawbin/03-create-colors.mts > ldrawdb/colors.json
 ```
 
 ## Phase 02: Convert Existing LDraw Files to JSON
