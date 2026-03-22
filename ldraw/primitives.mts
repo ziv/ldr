@@ -36,7 +36,7 @@ export class Vector3 {
      * Since the cube size is 20x24x20 we need to add the fix to the Y axis
      */
     cubesNorm() {
-        return Math.sqrt(this.x * this.x + this.y * this.y * 4 / 3 + this.z * this.z);
+        return Math.sqrt(this.x * this.x + this.y * this.y * 1.2 * 1.2 + this.z * this.z);
     }
 
     multiply(scalar: number) {

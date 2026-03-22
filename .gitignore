@@ -3,3 +3,6 @@ node_modules
 tmp
 example.ldr
 .DS_Store
+db
+viewer/node_modules
+viewer/dist

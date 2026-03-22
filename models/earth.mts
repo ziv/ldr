@@ -3,4 +3,4 @@ import {getImageData} from "../ldraw/image.mjs";
 import {render} from "../ldraw/render.mjs";
 
 const imageData = await getImageData("./assets/2k_earth.jpg");
-render(wrapSphere(createSphere(40), imageData));
+render(wrapSphere(createSphere(15), imageData));

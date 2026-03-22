@@ -3,46 +3,68 @@ import {type ImageData, LdrawPart, Part, Vec2, Vec3, Vector2, Vector3} from "./p
 import {getNearestColor} from "./colors.mjs";
 
 
-export function getPolar(center: Vector3, pos: Vector3) {
-    const dv = Vec3(
-        pos.x - center.x,
-        pos.y - center.y,
-        pos.z - center.z,
-    );
-
-    const radius = dv.norm();
-
-    if (0 === radius) {
-        // do not divide by zero
-        return Vec2();
-    }
+export function getUV(x: number, y: number, z: number): [number, number] {
+    const radius = Math.sqrt(x * x + y * y + z * z);
 
     // normal vector (size 1)
-    const n = dv.multiply(1 / radius);
+    const n = {x: x / radius, y: y / radius, z: z / radius};
 
-    // polar
+    // polar coordinates
     const theta = Math.atan2(n.z, n.x);
     const phi = Math.asin(n.y);
 
-    return Vec2(theta, phi);
-}
-
-function getVoxelPosition(polar: Vector2, imageWidth: number, imageHeight: number): Vector2 {
     // UV mapping
-    let u = (polar.theta + Math.PI) / (2 * Math.PI);
-    let v = ((polar.phi + Math.PI / 2) / Math.PI);
+    let u = (theta + Math.PI) / (2 * Math.PI);
+    let v = ((phi + Math.PI / 2) / Math.PI);
 
     // protect against out of bound
     u = Math.max(0, Math.min(0.999999, u));
     v = Math.max(0, Math.min(0.999999, v));
 
-    const pixelX = Math.floor(u * imageWidth);
-    const pixelY = Math.floor(v * imageHeight);
-
-    return Vec2(pixelX, pixelY);
-    // pixel location (size 4)
-    // return (pixelY * imageWidth + pixelX) * 4;
+    return [u, v];
 }
+
+//
+// export function getPolar(center: Vector3, pos: Vector3) {
+//     const dv = Vec3(
+//         pos.x - center.x,
+//         pos.y - center.y,
+//         pos.z - center.z,
+//     );
+//
+//     const radius = dv.norm();
+//
+//     if (0 === radius) {
+//         // do not divide by zero
+//         return Vec2();
+//     }
+//
+//     // normal vector (size 1)
+//     const n = dv.multiply(1 / radius);
+//
+//     // polar
+//     const theta = Math.atan2(n.z, n.x);
+//     const phi = Math.asin(n.y);
+//
+//     return Vec2(theta, phi);
+// }
+//
+// function getVoxelPosition(polar: Vector2, imageWidth: number, imageHeight: number): Vector2 {
+//     // UV mapping
+//     let u = (polar.theta + Math.PI) / (2 * Math.PI);
+//     let v = ((polar.phi + Math.PI / 2) / Math.PI);
+//
+//     // protect against out of bound
+//     u = Math.max(0, Math.min(0.999999, u));
+//     v = Math.max(0, Math.min(0.999999, v));
+//
+//     const pixelX = Math.floor(u * imageWidth);
+//     const pixelY = Math.floor(v * imageHeight);
+//
+//     return Vec2(pixelX, pixelY);
+//     // pixel location (size 4)
+//     // return (pixelY * imageWidth + pixelX) * 4;
+// }
 
 /**
  * Create a sphere
@@ -86,22 +108,7 @@ export function createRings(radius: number, thickness = 2): LdrawPart[] {
 
 export function wrapSphere(sphere: LdrawPart[], img: ImageData, threshold = 1) {
     for (const part of sphere) {
-        const radius = part.pos.norm();
-
-        // normal vector (size 1)
-        const n = part.pos.multiply(1 / radius);
-
-        // polar coordinates
-        const theta = Math.atan2(n.z, n.x);
-        const phi = Math.asin(n.y);
-
-        // UV mapping
-        let u = (theta + Math.PI) / (2 * Math.PI);
-        let v = ((phi + Math.PI / 2) / Math.PI);
-
-        // protect against out of bound
-        u = Math.max(0, Math.min(0.999999, u));
-        v = Math.max(0, Math.min(0.999999, v));
+        const [u, v] = getUV(part.pos.x, part.pos.y, part.pos.z);
 
         // image coordinates
         const x = Math.floor(u * img.width);

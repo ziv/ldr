@@ -3,6 +3,5 @@ import {getImageData} from "../ldraw/image.mjs";
 import {render} from "../ldraw/render.mjs";
 
 const imageData = await getImageData("./assets/2k_jupiter.jpg");
-const sun = wrapSphere(createSphere(20), imageData);
 
-render(sun);
+render(wrapSphere(createSphere(70).filter(x => x.pos.z > -35), imageData));
