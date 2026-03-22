@@ -24,7 +24,7 @@ function fileIndex(path: string): number {
 }
 
 let i = 0;
-for await (const file of walk('./ldrawdb')) {
+for await (const file of walk('./db')) {
     if (!file.endsWith('.dat')) {
         continue;
     }
@@ -44,18 +44,19 @@ for await (const file of walk('./ldrawdb')) {
                 ...p.slice(2, 14).map(parseFloat),
                 fileIndex(p[14]),
             ]);
-            continue;
-        }
-
-        if ('3' === type) {
+        } else if ('2' === type) {
+            data.push([
+                2,
+                parseInt(p[1], 10),
+                ...p.slice(2, 8).map(parseFloat),
+            ])
+        } else if ('3' === type) {
             data.push([
                 3,
                 parseInt(p[1], 10),
                 ...p.slice(2, 11).map(parseFloat)
             ]);
-        }
-
-        if ('4' === type) {
+        } else if ('4' === type) {
             data.push([
                 4,
                 parseInt(p[1], 10),
@@ -64,7 +65,7 @@ for await (const file of walk('./ldrawdb')) {
             ]);
         }
     }
-    const target = file.replace('.dat', '.json');
+    const target = file.replace('.dat', '.json').replace('db', 'ldrawdb');
     await fs.writeFile(target, JSON.stringify(data), 'utf-8');
 
     if (++i % 100 === 0) {

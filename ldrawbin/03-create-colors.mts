@@ -1,5 +1,12 @@
 import {readFileSync} from "node:fs";
 
+function toRGB(hex: string) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return [r, g, b];
+}
+
 const lines = readFileSync("./ldrawdb/LDCfgalt.ldr", "utf8")
     .split("\n")
     .map(line => line.trim())
@@ -16,29 +23,31 @@ for (const line of lines) {
         edge: '',
         alpha: -1,
         luminance: -1,
+        rgb: [0, 0, 0],
     };
 
     for (let i = 0; i < parts.length; i++) {
         const c = parts[i];
         const n = parts[i + 1];
 
-        if (c === 'CODE' && typeof n === 'string') {
+        if (c === 'CODE' && n) {
             color.code = parseInt(n, 10);
         }
 
-        if (c === 'VALUE' && typeof n === 'string' && i < 6) {
+        if (c === 'VALUE' && n && i < 6) {
             color.color = n;
+            color.rgb = toRGB(n);
         }
 
-        if (c === 'EDGE' && typeof n === 'string') {
+        if (c === 'EDGE' && n) {
             color.edge = n;
         }
 
-        if (c === 'ALPHA' && typeof n === 'string') {
+        if (c === 'ALPHA' && n) {
             color.alpha = parseInt(n, 10);
         }
 
-        if (c === 'LUMINANCE' && typeof n === 'string') {
+        if (c === 'LUMINANCE' && n) {
             color.luminance = parseInt(n, 10);
         }
     }

@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <title>Three.js LDraw Viewer - Local DB</title>
     <style>
-        body { margin: 0; overflow: hidden; background-color: #fafafa; }
-        canvas { display: block; }
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #fafafa;
+        }
+
+        canvas {
+            display: block;
+        }
+
         #loading {
-            position: absolute; top: 50%; left: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-family: sans-serif; font-size: 20px; color: #333;
-            background: rgba(255,255,255,0.9); padding: 20px; border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -30,9 +44,143 @@
 
 <script type="module">
     import * as THREE from 'three';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-    import { LDrawLoader } from 'three/addons/loaders/LDrawLoader.js';
+    import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+    import {LDrawLoader} from 'three/addons/loaders/LDrawLoader.js';
 
+
+    async function fetchColors() {
+        const res = await fetch('http://127.0.0.1:8080/colors.json');
+        const raw = await res.json();
+        return raw.reduce((acc, cur) => {
+            acc[cur.code] = cur.rgb;
+            return acc;
+        }, {});
+    }
+
+    /**
+     * פונקציה שמקבלת URL לקובץ הבינארי המכווץ שלנו, ומחזירה THREE.Mesh
+     */
+    async function loadBinaryLDrawPart() {
+        const colorsMap = await fetchColors();
+
+        // 1. משיכת הקובץ מהשרת
+        // הערה: אם השרת שלך מוגדר נכון, הוא יפתח את ה-gzip אוטומטית והדפדפן יקבל ArrayBuffer רגיל
+        const response = await fetch('http://127.0.0.1:8080/parts/1.bin');
+        const arrayBuffer = await response.arrayBuffer();
+        const view = new DataView(arrayBuffer);
+
+        const group = new THREE.Group();
+        const positions = [];
+        const colors = [];
+
+        let offset = 0;
+
+        // 2. לולאת הקריאה (Parsing)
+        while (offset < arrayBuffer.byteLength) {
+            // קריאת התו הפותח (1 בייט)
+            const type = view.getUint8(offset);
+            offset += 1;
+
+            // קריאת קוד הצבע (4 בתים) - כרגע נשמור רק את הגיאומטריה, אבל אפשר לשמור גם אותו
+            const colorId = view.getInt32(offset, true);
+            offset += 4;
+
+            const rgb = colors[colorId] || [100, 100, 100];
+
+            if (type === 3) {
+                // --- משולש (Type 3) ---
+                // קוראים 9 מספרי Float32 (שלושה קודקודים)
+                for (let i = 0; i < 9; i++) {
+                    positions.push(view.getFloat32(offset, true));
+                    offset += 4;
+                }
+                // color for each point
+                for (let i = 0; i < 3; i++) {
+                    colors.push(rgb[0], rgb[1], rgb[2]);
+                }
+            } else if (type === 4) {
+                // --- מרובע (Type 4) ---
+                // קוראים את 4 הקודקודים (12 מספרים)
+                const v1x = view.getFloat32(offset, true);
+                offset += 4;
+                const v1y = view.getFloat32(offset, true);
+                offset += 4;
+                const v1z = view.getFloat32(offset, true);
+                offset += 4;
+
+                const v2x = view.getFloat32(offset, true);
+                offset += 4;
+                const v2y = view.getFloat32(offset, true);
+                offset += 4;
+                const v2z = view.getFloat32(offset, true);
+                offset += 4;
+
+                const v3x = view.getFloat32(offset, true);
+                offset += 4;
+                const v3y = view.getFloat32(offset, true);
+                offset += 4;
+                const v3z = view.getFloat32(offset, true);
+                offset += 4;
+
+                const v4x = view.getFloat32(offset, true);
+                offset += 4;
+                const v4y = view.getFloat32(offset, true);
+                offset += 4;
+                const v4z = view.getFloat32(offset, true);
+                offset += 4;
+
+                // חיתוך המרובע ל-2 משולשים (דוחפים 18 מספרים סך הכל)
+                // משולש ראשון: v1, v2, v3
+                positions.push(v1x, v1y, v1z, v2x, v2y, v2z, v3x, v3y, v3z);
+                // משולש שני: v1, v3, v4
+                positions.push(v1x, v1y, v1z, v3x, v3y, v3z, v4x, v4y, v4z);
+
+                // push for six points
+                for (let i = 0; i < 6; i++) {
+                    colors.push(rgb[0], rgb[1], rgb[2]);
+                }
+            } else if (type === 1) {
+                // --- הפניה לחלק אחר (Type 1) ---
+                // במידה והקובץ הבינארי מכיל הפניות, פשוט נדלג עליהן כרגע (או שנטפל בהן בהמשך)
+                // 12 קואורדינטות (48 בתים) + מזהה קובץ (4 בתים) = 52 בתים לדלג
+                offset += 52;
+            }
+        }
+
+        // 3. יצירת הגיאומטריה המיושרת עבור כרטיס המסך
+        const geometry = new THREE.BufferGeometry();
+
+        // ממירים את המערך הרגיל למערך TypedArray מיושר ש-WebGL דורש
+        const positionFloatArray = new Float32Array(positions);
+
+        // מגדירים ל-Three.js שכל קודקוד מורכב מ-3 מספרים (x, y, z)
+        geometry.setAttribute('position', new THREE.BufferAttribute(positionFloatArray, 3));
+
+        geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colors), 3));
+        // חישוב אוטומטי של נורמלים כדי שהתאורה תיראה מציאותית
+        geometry.computeVertexNormals();
+
+        // 4. יצירת חומר זמני ובניית ה-Mesh
+        const material = new THREE.MeshStandardMaterial({
+            vertexColors: true,
+            roughness: 0.1,
+            metalness: 0.0,
+            side: THREE.DoubleSide
+
+            // color: 0xaaaaaa, // אפור סטנדרטי בינתיים
+            // roughness: 0.1,  // ברק של פלסטיק
+            // metalness: 0.0,
+            // side: THREE.DoubleSide // בינתיים מבטלים Backface Culling כדי לראות הכל
+        });
+
+        // const material = new THREE.MeshBasicMaterial({});
+        const mesh = new THREE.Mesh(geometry, material);
+
+        // קנה המידה של LDraw קצת שונה, הרבה פעמים צריך לסובב את המודל ב-180 מעלות בציר ה-X
+        mesh.rotation.x = Math.PI;
+
+        return mesh;
+    }
 
     // 1. הגדרת הנתיבים (הכל באותו שרת)
     const PARTS_LIBRARY_PATH = './db/'; // הנתיב לתיקיית הבסיס של LDraw
@@ -53,7 +201,7 @@
 
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
 
-        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer = new THREE.WebGLRenderer({antialias: true});
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -68,38 +216,48 @@
         directionalLight.position.set(1, 1.2, 0.5).normalize();
         scene.add(directionalLight);
 
+        loadBinaryLDrawPart().then(mesh => {
+            console.log(mesh);
+            scene.add(mesh);
+            centerModel(mesh);
+            loadingDiv.style.display = 'none';
+        }).catch(error => {
+            console.error('Error loading binary part:', error);
+            loadingDiv.innerText = 'שגיאה בטעינת החלק הבינארי. בדוק את ה-Console.';
+        });
+
         // --- טעינת ה-LDraw ---
-        const loader = new LDrawLoader();
-        loader.preloadMaterials(PARTS_LIBRARY_PATH + 'LDConfig.ldr');
+        // const loader = new LDrawLoader();
+        // loader.preloadMaterials(PARTS_LIBRARY_PATH + 'LDConfig.ldr');
 
         // הגדרת הנתיב למסד הנתונים הסטטי שלך
-        loader.setPartsLibraryPath(PARTS_LIBRARY_PATH);
+        // loader.setPartsLibraryPath(PARTS_LIBRARY_PATH);
 
         // טעינת המודל הישירה (הלואדר ימשוך את החלקים החסרים בעצמו)
-        loader.load(
-            MODEL_URL,
-            function (group) {
-                console.log(group);
-                // הצלחה: הוספה לסצנה
-                group.rotation.x = Math.PI; // התאמת צירים
-                scene.add(group);
-
-                centerModel(group);
-                loadingDiv.style.display = 'none';
-            },
-            function (xhr) {
-                // עדכון התקדמות
-                if (xhr.lengthComputable) {
-                    const percentComplete = Math.round((xhr.loaded / xhr.total) * 100);
-                    progressSpan.innerText = percentComplete;
-                }
-            },
-            function (error) {
-                // טיפול בשגיאות
-                console.error('Error loading model or parts:', error);
-                loadingDiv.innerText = 'שגיאה בטעינה. בדוק את ה-Console.';
-            }
-        );
+        // loader.load(
+        //     MODEL_URL,
+        //     function (group) {
+        //         console.log(group);
+        //         // הצלחה: הוספה לסצנה
+        //         group.rotation.x = Math.PI; // התאמת צירים
+        //         scene.add(group);
+        //
+        //         centerModel(group);
+        //         loadingDiv.style.display = 'none';
+        //     },
+        //     function (xhr) {
+        //         // עדכון התקדמות
+        //         if (xhr.lengthComputable) {
+        //             const percentComplete = Math.round((xhr.loaded / xhr.total) * 100);
+        //             progressSpan.innerText = percentComplete;
+        //         }
+        //     },
+        //     function (error) {
+        //         // טיפול בשגיאות
+        //         console.error('Error loading model or parts:', error);
+        //         loadingDiv.innerText = 'שגיאה בטעינה. בדוק את ה-Console.';
+        //     }
+        // );
 
         window.addEventListener('resize', onWindowResize);
     }
@@ -129,6 +287,9 @@
         controls.update();
         renderer.render(scene, camera);
     }
+
+    console.log('done');
 </script>
+<script src="viewer/main.ts"></script>
 </body>
 </html>
