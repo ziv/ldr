@@ -3,27 +3,14 @@ import * as fs from "node:fs";
 import * as process from "node:process";
 import {walk} from "./shared/walk.mjs";
 
-const USAGE = 'Usage: build-database.mts <source_dir> <destination_dir>';
-
 const BFC_CCW = 0;
 const BFC_CW = 1;
 const BFC_INVERTNEXT = 2;
 
-const args = process.argv.splice(2);
 
-if (2 !== args.length) {
-    console.error(USAGE);
-    process.exit(1);
-}
-
-const src = args.shift() as string;
-const dst = args.shift() as string;
-
-if (!src || !dst) {
-    console.error("Missing required arguments");
-    console.error(USAGE);
-    process.exit(2);
-}
+// those directories should exist before running the script, and the script will create missing subdirectories as needed.
+const src = "db"
+const dst = "ldrawdb"
 
 try {
     const srcStat = fs.statSync(src);
