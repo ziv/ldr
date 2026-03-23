@@ -5,7 +5,7 @@ export type FileContent = (string | number)[][];
 
 // const DB_URL = "https://cdn.jsdelivr.net/gh/ziv/ldr@main/ldrawdb/";
 const DB_URL = "https://raw.githubusercontent.com/ziv/ldr/refs/heads/main/ldrawdb/";
-const USE_PARENT_COLOR = 16;
+const USE_PARENT_COLOR = 0;
 
 
 /**
@@ -46,9 +46,12 @@ export class LdrawJsLoader {
     constructor(readonly colors: Record<number, RGB>) {
     }
 
-    color(id: number): RGB {
+    // todo rebuild colors database and add edges
+    color(id: number, parent: number): RGB {
+        if (id === 16) {
+            return this.colors[parent] as RGB;
+        }
         if (id in this.colors) {
-            console.log(id);
             return this.colors[id] as RGB;
         }
         return [255, 0, 255];
@@ -151,7 +154,7 @@ export class LdrawJsLoader {
         if (facesPositions.length > 0) {
             const geometry = new THREE.BufferGeometry();
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(facesPositions), 3));
-            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => this.color(c)).flat()), 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => this.color(c, parentColor)).flat()), 3));
 
             geometry.computeVertexNormals();
 

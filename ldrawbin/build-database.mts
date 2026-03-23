@@ -15,7 +15,6 @@ const BFC_CCW = 0;
 const BFC_CW = 1;
 const BFC_INVERTNEXT = 2;
 
-
 // those directories should exist before running the script, and the script will create missing subdirectories as needed.
 const src = "db"
 const dst = "ldrawdb"
