@@ -24,7 +24,7 @@ function fileIndex(path: string): number {
 
 export function datToJson(raw: string) {
     const lines = raw.split('\n').map(line => line.trim()).filter(Boolean);
-    const data: number[][] = [];
+    const data: (number | string)[][] = [];
 
     for (const line of lines) {
         const p = line.split(' ') as LdrLine;
@@ -35,7 +35,7 @@ export function datToJson(raw: string) {
                 1,
                 parseInt(p[1], 10),
                 ...p.slice(2, 14).map(parseFloat),
-                fileIndex(p[14]),
+                p[14].trim(),
             ]);
         } else if ('2' === type) {
             data.push([

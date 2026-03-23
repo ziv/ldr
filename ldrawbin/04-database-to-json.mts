@@ -10,11 +10,12 @@ for await (const file of walk('./db')) {
     const content = await fs.readFile(file, 'utf-8');
     const data = datToJson(content);
     const target = file.replace('.dat', '.json').replace('db', 'ldrawdb');
-    await fs.writeFile(target, JSON.stringify(data), 'utf-8');
 
-    if (++i % 100 === 0) {
-        process.stdout.write('.');
-    }
+    console.log(data);
+    process.exit(0);
+    // await fs.writeFile(target, JSON.stringify(data), 'utf-8');
+
+    if (++i % 100 === 0) process.stdout.write('.');
 }
 
 console.log('done');
