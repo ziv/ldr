@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {createLoader} from "./loader.js";
+import {LdrawJsLoader} from "../ldrawloader/ldraw-loader.mjs";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
 
 const scene = new THREE.Scene();
@@ -25,8 +25,8 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
 directionalLight.position.set(1, 1.2, 0.5).normalize();
 scene.add(directionalLight);
 
-const loader = await createLoader();
-const g = await loader.load(32229, [255, 0, 0]);
+const loader =  new LdrawJsLoader();
+const g = await loader.load("3002.dat", 1);
 
 g.rotation.x = Math.PI;
 scene.add(g);

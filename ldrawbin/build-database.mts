@@ -1,7 +1,15 @@
 #!/usr/bin/env tsx
 import * as fs from "node:fs";
 import * as process from "node:process";
-import {walk} from "./shared/walk.mjs";
+import * as path from "node:path";
+
+async function* walk(dir: string): AsyncGenerator<string> {
+    for await (const d of await fs.promises.opendir(dir)) {
+        const entry = path.join(dir, d.name);
+        if (d.isDirectory()) yield* walk(entry);
+        else if (d.isFile()) yield entry;
+    }
+}
 
 const BFC_CCW = 0;
 const BFC_CW = 1;
