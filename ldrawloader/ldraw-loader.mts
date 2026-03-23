@@ -38,6 +38,7 @@ async function fetchPart(name: string): Promise<FileContent> {
     throw new Error('Part not found, aborting.');
 }
 
+let colorCounter = 0;
 function getColor(id: string | number): RGB {
     return [255, 0, 255];
 }
