@@ -10,6 +10,13 @@
 
 ---
 
+## LDrawDB via HTTP
+
+https://cdn.jsdelivr.net/gh/ziv/ldr@main/ldrawdb/parts/003238a.json
+
+
+### Loader
+
 A new loader for `Three.js` to load LDraw files directly in the browser, without the need for a server or conversion to
 other formats. The loader will support both the official LDraw parts library and user-created models, allowing for a
 wide range of applications such as online LEGO building tools, educational resources, and interactive 3D visualizations.

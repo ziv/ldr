@@ -8,14 +8,20 @@ import {walk} from "./shared/walk.mjs";
 
 
 let id = 0;
-const map: Record<string, number> = {};
-
-for await (const file of walk("./ldrawdb")) {
-    if (!file.endsWith(".ldr") && !file.endsWith(".dat")) {
-        continue;
-    }
+// const map: Record<string, number> = {};
+const list: string[] = [];
+for await (const file of walk("./db")) {
+    if (!file.endsWith(".dat")) continue;
     const key = file.replace("db/", "").replaceAll("/", "\\");
-    map[key] = id++;
+    // map[key] = id++;
+    list.push(key);
 }
 
-console.log(JSON.stringify(map, null, 2));
+list.sort();
+const map = list.reduce((acc, key, i) => {
+    acc[key] = i;
+    return acc;
+}, {} as Record<string, number>);
+// for (const i of list) console.log(i);
+console.log(map);
+// console.log(JSON.stringify(map, null, 2));

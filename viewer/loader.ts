@@ -44,7 +44,7 @@ export class LdrawjsLoader {
             const type = view.getUint8(offset);
             offset += 1;
 
-            // line color
+            // line color todo should be smaller
             const colorId = view.getInt32(offset, true);
             offset += 4;
 
@@ -96,6 +96,7 @@ export class LdrawjsLoader {
                 const w = vector();
                 const t = vector();
 
+                // todo should be smaller
                 const fileId = view.getUint32(offset, true);
                 offset += 4;
 

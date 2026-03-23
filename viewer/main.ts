@@ -47,7 +47,7 @@ function animate(time: DOMHighResTimeStamp) {
 
 renderer.setAnimationLoop(animate);
 
-function centerModel(group) {
+function centerModel(group: THREE.Group) {
     const box = new THREE.Box3().setFromObject(group);
     const center = box.getCenter(new THREE.Vector3());
     const size = box.getSize(new THREE.Vector3());

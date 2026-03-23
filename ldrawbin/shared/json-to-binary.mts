@@ -22,7 +22,7 @@ export function jsonToBinary(jsonArray: LdrLine[]) {
         buf.writeUInt8(type, offset);
         offset += 1;
 
-        // color todo this is too be too...
+        // color todo this is too long
         buf.writeInt32LE(row[1] as number, offset);
         offset += 4;
 
