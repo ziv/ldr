@@ -26,7 +26,7 @@ directionalLight.position.set(1, 1.2, 0.5).normalize();
 scene.add(directionalLight);
 
 const loader =  new LdrawJsLoader();
-const g = await loader.load("000.dat", 1);
+const g = await loader.load("car.dat", 1);
 
 g.rotation.x = Math.PI;
 scene.add(g);
