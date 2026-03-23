@@ -99,6 +99,7 @@ for await (const file of walk(src)) {
             ]);
         } else if ('5' === type) {
             output.push([
+                5,
                 color,
                 ...parts.slice(1, 13).map(parseFloat),  // 12 floats
             ]);

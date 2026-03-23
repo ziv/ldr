@@ -1,11 +1,12 @@
 import * as THREE from 'three';
 
-type RGB = [number, number, number];
-type FileContent = (string | number)[][];
+export type RGB = [number, number, number];
+export type FileContent = (string | number)[][];
 
 // const DB_URL = "https://cdn.jsdelivr.net/gh/ziv/ldr@main/ldrawdb/";
 const DB_URL = "https://raw.githubusercontent.com/ziv/ldr/refs/heads/main/ldrawdb/";
 const USE_PARENT_COLOR = 16;
+
 
 /**
  * Fetch part from remote server or persistent cache
@@ -20,6 +21,7 @@ async function fetchPart(name: string): Promise<FileContent> {
     }
 
     const candidates = [
+        name,
         `parts/${name}`,
         `parts/s/${name}`,
         `p/${name}`,
@@ -38,16 +40,30 @@ async function fetchPart(name: string): Promise<FileContent> {
     throw new Error('Part not found, aborting.');
 }
 
-let colorCounter = 0;
-function getColor(id: string | number): RGB {
-    return [255, 0, 255];
-}
-
 export class LdrawJsLoader {
     readonly fetchCache = new Map<string, Promise<FileContent>>();
 
+    constructor(readonly colors: Record<number, RGB>) {
+    }
+
+    color(id: number): RGB {
+        if (id in this.colors) {
+            console.log(id);
+            return this.colors[id] as RGB;
+        }
+        return [255, 0, 255];
+    }
+
     async load(partName: string, parentColor = USE_PARENT_COLOR): Promise<THREE.Group> {
-        const data = await fetchPart(partName);
+        // we keep the promises to ensure we don't fetch the same part multiple times in parallel
+        // the promise is enough since it marked the data as fetched even if it's not ready yet
+        let partPromise = this.fetchCache.get(partName);
+        if (!partPromise) {
+            partPromise = fetchPart(partName);
+            this.fetchCache.set(partName, partPromise);
+        }
+
+        const data = await partPromise;
         const group = new THREE.Group();
 
         const facesPositions: number[] = [];
@@ -70,7 +86,6 @@ export class LdrawJsLoader {
                 continue;
             }
             if (1 === type) {
-                // todo handle sub object
                 const x = line[2] as number;
                 const y = line[3] as number;
                 const z = line[4] as number;
@@ -94,24 +109,19 @@ export class LdrawJsLoader {
                 );
 
                 subPartsPromises.push(this.load(file, color).then(subPart => {
+                    // todo apply colors?!
                     subPart.applyMatrix4(matrix);
                     group.add(subPart);
                 }));
-                continue;
-            }
-            if (2 === type) {
+            } else if (2 === type) {
                 // 2 points
                 linePositions.push(...(line.slice(2, 8) as number[]));
                 lineColors.push(color, color);
-                continue;
-            }
-            if (3 === type) {
+            } else if (3 === type) {
                 // 3 points -> 1 * triangle (3 vectors)
                 facesPositions.push(...(line.slice(2, 11) as number[]));
                 facesColors.push(color, color, color);
-                continue;
-            }
-            if (4 === type) {
+            } else if (4 === type) {
                 // 4 points -> 2 * triangles (4 vectors)
                 const v1 = line.slice(2, 5) as number[];
                 const v2 = line.slice(5, 8) as number[];
@@ -123,8 +133,7 @@ export class LdrawJsLoader {
 
                 facesColors.push(color, color, color);
                 facesColors.push(color, color, color);
-            }
-            if (5 === type) {
+            } else if (5 === type) {
                 const v1 = line.slice(2, 5) as number[];
                 const v2 = line.slice(5, 8) as number[];
                 const c1 = line.slice(8, 11) as number[];
@@ -142,7 +151,7 @@ export class LdrawJsLoader {
         if (facesPositions.length > 0) {
             const geometry = new THREE.BufferGeometry();
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(facesPositions), 3));
-            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => getColor(c)).flat()), 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => this.color(c)).flat()), 3));
 
             geometry.computeVertexNormals();
 
@@ -161,7 +170,7 @@ export class LdrawJsLoader {
 
             // todo colors should come from edges
             lineGeometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(linePositions), 3));
-            lineGeometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(lineColors.map(c => [255, 255, 255]).flat()), 3));
+            lineGeometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(lineColors.map(c => [255, 0, 255]).flat()), 3));
 
             const lineMaterial = new THREE.LineBasicMaterial({
                 vertexColors: true,
