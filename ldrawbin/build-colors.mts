@@ -1,13 +1,15 @@
 import {readFileSync} from "node:fs";
 import {LineParser} from "./utils/line-parser.mjs";
+import {
+    FINISH_TYPE_CHROME,
+    FINISH_TYPE_DEFAULT,
+    FINISH_TYPE_MATTE_METALLIC,
+    FINISH_TYPE_METAL,
+    FINISH_TYPE_PEARLESCENT,
+    FINISH_TYPE_RUBBER
+} from "../ldrawloader/ldraw-primitives.mjs";
 
 const IDENTIFIER = "0 !COLOUR";
-const FINISH_TYPE_DEFAULT = 0;
-const FINISH_TYPE_CHROME = 1;
-const FINISH_TYPE_PEARLESCENT = 2;
-const FINISH_TYPE_RUBBER = 3;
-const FINISH_TYPE_MATTE_METALLIC = 4;
-const FINISH_TYPE_METAL = 5;
 
 const colorsLines = readFileSync("./db/LDCfgalt.ldr", "utf-8")
     .split("\n")
@@ -15,6 +17,15 @@ const colorsLines = readFileSync("./db/LDCfgalt.ldr", "utf-8")
     .map(l => l.replace(IDENTIFIER, "").trim());
 
 const map: Record<string, any> = {};
+
+const materialMap: Record<number, any> = {
+    [FINISH_TYPE_DEFAULT]: {roughness: 0.3, metalness: 0.25},
+    [FINISH_TYPE_PEARLESCENT]: {roughness: 0.3, metalness: 0.25},
+    [FINISH_TYPE_CHROME]: {roughness: 0, metalness: 1},
+    [FINISH_TYPE_RUBBER]: {roughness: 0.9, metalness: 0},
+    [FINISH_TYPE_MATTE_METALLIC]: {roughness: 0.8, metalness: 0.4},
+    [FINISH_TYPE_METAL]: {roughness: 0.2, metalness: 0.85},
+};
 
 for (const l of colorsLines) {
     const parser = new LineParser(l);
@@ -24,7 +35,6 @@ for (const l of colorsLines) {
     let fillColor = '#FF00FF';
     let edgeColor = '#FF00FF';
     let alpha = 1;
-    let isTransparent = false;
     let luminance = 0;
     let finishType = FINISH_TYPE_DEFAULT;
 
@@ -46,7 +56,6 @@ for (const l of colorsLines) {
                 break;
             case "ALPHA":
                 alpha = Math.max(0, Math.min(1, parser.int() / 255));
-                isTransparent = alpha < 1;
                 break;
             case "LUMINANCE":
                 luminance = Math.max(0, Math.min(1, parser.int() / 255));
@@ -78,9 +87,9 @@ for (const l of colorsLines) {
         fillColor,
         edgeColor,
         alpha,
-        isTransparent,
         luminance,
         finishType,
+        materialArgs: materialMap[finishType],
     };
 }
 

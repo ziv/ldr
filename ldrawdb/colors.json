@@ -3,2576 +3,3542 @@
     "fillColor": "#1B2A34",
     "edgeColor": "#2B4354",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "1": {
     "fillColor": "#1E5AA8",
     "edgeColor": "#16437D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "2": {
     "fillColor": "#00852B",
     "edgeColor": "#005119",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "3": {
     "fillColor": "#069D9F",
     "edgeColor": "#036A6C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "4": {
     "fillColor": "#B40000",
     "edgeColor": "#7F0000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "5": {
     "fillColor": "#D3359D",
     "edgeColor": "#AF267F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "6": {
     "fillColor": "#543324",
     "edgeColor": "#794934",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "7": {
     "fillColor": "#8A928D",
     "edgeColor": "#707974",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "8": {
     "fillColor": "#545955",
     "edgeColor": "#3B3F3C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "9": {
     "fillColor": "#97CBD9",
     "edgeColor": "#71B7CA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10": {
     "fillColor": "#58AB41",
     "edgeColor": "#448532",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "11": {
     "fillColor": "#00AAA4",
     "edgeColor": "#007571",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "12": {
     "fillColor": "#F06D61",
     "edgeColor": "#EB4131",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "13": {
     "fillColor": "#F6A9BB",
     "edgeColor": "#F07995",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "14": {
     "fillColor": "#FAC80A",
     "edgeColor": "#CCA404",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "15": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#DBDBDB",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "16": {
     "fillColor": "#FFFF80",
     "edgeColor": "#333333",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "17": {
     "fillColor": "#ADD9A8",
     "edgeColor": "#89C882",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "18": {
     "fillColor": "#FFD67F",
     "edgeColor": "#FFC64C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "19": {
     "fillColor": "#D7BA8C",
     "edgeColor": "#C9A468",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20": {
     "fillColor": "#AFBED6",
     "edgeColor": "#8CA1C4",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "21": {
     "fillColor": "#E0FFB0",
     "edgeColor": "#B8FF4D",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0.058823529411764705,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "22": {
     "fillColor": "#671F81",
     "edgeColor": "#441456",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "23": {
     "fillColor": "#0E3E9A",
     "edgeColor": "#092C6B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "24": {
     "fillColor": "#7F7F7F",
     "edgeColor": "#333333",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "25": {
     "fillColor": "#D67923",
     "edgeColor": "#AB611B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "26": {
     "fillColor": "#901F76",
     "edgeColor": "#641552",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "27": {
     "fillColor": "#A5CA18",
     "edgeColor": "#7F9B12",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "28": {
     "fillColor": "#897D62",
     "edgeColor": "#6B624C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "29": {
     "fillColor": "#FF9ECD",
     "edgeColor": "#FF6BB2",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30": {
     "fillColor": "#A06EB9",
     "edgeColor": "#884FA5",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "31": {
     "fillColor": "#CDA4DE",
     "edgeColor": "#B87FD1",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "32": {
     "fillColor": "#000000",
     "edgeColor": "#333333",
     "alpha": 0.8235294117647058,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "33": {
     "fillColor": "#0020A0",
     "edgeColor": "#000B38",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "34": {
     "fillColor": "#237841",
     "edgeColor": "#174F2B",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "35": {
     "fillColor": "#56E646",
     "edgeColor": "#27AF18",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "36": {
     "fillColor": "#C91A09",
     "edgeColor": "#660D05",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "37": {
     "fillColor": "#DF6695",
     "edgeColor": "#B9275F",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "38": {
     "fillColor": "#FF800D",
     "edgeColor": "#A85100",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "39": {
     "fillColor": "#C1DFF0",
     "edgeColor": "#6FB4DC",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "40": {
     "fillColor": "#635F52",
     "edgeColor": "#2A2823",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "41": {
     "fillColor": "#559AB7",
     "edgeColor": "#326276",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "42": {
     "fillColor": "#C0FF00",
     "edgeColor": "#739900",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "43": {
     "fillColor": "#AEE9EF",
     "edgeColor": "#59D1DE",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "44": {
     "fillColor": "#96709F",
     "edgeColor": "#5F4365",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "45": {
     "fillColor": "#FC97AC",
     "edgeColor": "#F9345B",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "46": {
     "fillColor": "#F5CD2F",
     "edgeColor": "#B49208",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "47": {
     "fillColor": "#FCFCFC",
     "edgeColor": "#C9C9C9",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "52": {
     "fillColor": "#A5A5CB",
     "edgeColor": "#6464A6",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "54": {
     "fillColor": "#DAB000",
     "edgeColor": "#755E00",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "57": {
     "fillColor": "#F08F1C",
     "edgeColor": "#9E5C0A",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "60": {
     "fillColor": "#645A4C",
     "edgeColor": "#665B4D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "61": {
     "fillColor": "#6C96BF",
     "edgeColor": "#3D638A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "62": {
     "fillColor": "#3CB371",
     "edgeColor": "#226741",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "63": {
     "fillColor": "#AA4D8E",
     "edgeColor": "#632C52",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "64": {
     "fillColor": "#1B2A34",
     "edgeColor": "#3D5F76",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "65": {
     "fillColor": "#FAC80A",
     "edgeColor": "#9A7C03",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "66": {
     "fillColor": "#F5CD2F",
     "edgeColor": "#B49208",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "67": {
     "fillColor": "#FCFCFC",
     "edgeColor": "#C9C9C9",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "68": {
     "fillColor": "#FDC383",
     "edgeColor": "#FCA84F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "69": {
     "fillColor": "#8A12A8",
     "edgeColor": "#620C78",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "70": {
     "fillColor": "#5F3109",
     "edgeColor": "#8B480D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "71": {
     "fillColor": "#969696",
     "edgeColor": "#7C7C7C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "72": {
     "fillColor": "#646464",
     "edgeColor": "#494949",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "73": {
     "fillColor": "#7396C8",
     "edgeColor": "#4E7BBA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "74": {
     "fillColor": "#7FC475",
     "edgeColor": "#5DB450",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "75": {
     "fillColor": "#000000",
     "edgeColor": "#AB6038",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "76": {
     "fillColor": "#635F61",
     "edgeColor": "#898788",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "77": {
     "fillColor": "#FECCCF",
     "edgeColor": "#FC9BA1",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "78": {
     "fillColor": "#FFC995",
     "edgeColor": "#FFAD60",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "79": {
     "fillColor": "#EEEEEE",
     "edgeColor": "#BABABA",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "80": {
     "fillColor": "#767676",
     "edgeColor": "#8E8E8E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "81": {
     "fillColor": "#C2C06F",
     "edgeColor": "#D1D093",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "82": {
     "fillColor": "#DBAC34",
     "edgeColor": "#E2BD5E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "83": {
     "fillColor": "#0A1327",
     "edgeColor": "#000000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "84": {
     "fillColor": "#AA7D55",
     "edgeColor": "#876344",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "85": {
     "fillColor": "#441A91",
     "edgeColor": "#301268",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "86": {
     "fillColor": "#7B5D41",
     "edgeColor": "#5A442F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "87": {
     "fillColor": "#3E3C39",
     "edgeColor": "#575450",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "89": {
     "fillColor": "#1C58A7",
     "edgeColor": "#14407A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "92": {
     "fillColor": "#BB805A",
     "edgeColor": "#9F6641",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "100": {
     "fillColor": "#F9B7A5",
     "edgeColor": "#F59074",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "110": {
     "fillColor": "#26469A",
     "edgeColor": "#1C3472",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "112": {
     "fillColor": "#4861AC",
     "edgeColor": "#394D88",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "114": {
     "fillColor": "#DF6695",
     "edgeColor": "#B9275F",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "115": {
     "fillColor": "#B7D425",
     "edgeColor": "#91A91D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "117": {
     "fillColor": "#EEEEEE",
     "edgeColor": "#BABABA",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "118": {
     "fillColor": "#9CD6CC",
     "edgeColor": "#79C7BA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "120": {
     "fillColor": "#DEEA92",
     "edgeColor": "#D2E269",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "121": {
     "fillColor": "#F89A39",
     "edgeColor": "#F67F08",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "123": {
     "fillColor": "#EE5434",
     "edgeColor": "#DD3311",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "125": {
     "fillColor": "#F9A777",
     "edgeColor": "#F78644",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "128": {
     "fillColor": "#AD6140",
     "edgeColor": "#864A31",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "129": {
     "fillColor": "#640061",
     "edgeColor": "#000000",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "132": {
     "fillColor": "#000000",
     "edgeColor": "#898788",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "133": {
     "fillColor": "#000000",
     "edgeColor": "#DBAC34",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "134": {
     "fillColor": "#764D3B",
     "edgeColor": "#54372A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "135": {
     "fillColor": "#A0A0A0",
     "edgeColor": "#878787",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "137": {
     "fillColor": "#5B7590",
     "edgeColor": "#465B70",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "142": {
     "fillColor": "#DEAC66",
     "edgeColor": "#D5963D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "147": {
     "fillColor": "#83724F",
     "edgeColor": "#62553B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "148": {
     "fillColor": "#484D48",
     "edgeColor": "#2E312E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "150": {
     "fillColor": "#989B99",
     "edgeColor": "#7E807F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "151": {
     "fillColor": "#C8C8C8",
     "edgeColor": "#ADADAD",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "158": {
     "fillColor": "#F18EBB",
     "edgeColor": "#E63384",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "176": {
     "fillColor": "#945148",
     "edgeColor": "#713D36",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "178": {
     "fillColor": "#AB673A",
     "edgeColor": "#84502D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "179": {
     "fillColor": "#898788",
     "edgeColor": "#6E6C6D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "180": {
     "fillColor": "#DD982E",
     "edgeColor": "#B87A1D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "183": {
     "fillColor": "#F6F2DF",
     "edgeColor": "#EAE2B7",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "184": {
     "fillColor": "#D60026",
     "edgeColor": "#A3001D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "185": {
     "fillColor": "#0059A3",
     "edgeColor": "#003D70",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "186": {
     "fillColor": "#008E3C",
     "edgeColor": "#005B26",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "187": {
     "fillColor": "#57392C",
     "edgeColor": "#36231B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "189": {
     "fillColor": "#AC8247",
     "edgeColor": "#896738",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "191": {
     "fillColor": "#FCAC00",
     "edgeColor": "#C68700",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "200": {
     "fillColor": "#708224",
     "edgeColor": "#4F5C19",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "212": {
     "fillColor": "#9DC3F7",
     "edgeColor": "#6CA4F3",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "213": {
     "fillColor": "#476FB6",
     "edgeColor": "#395A92",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "216": {
     "fillColor": "#872B17",
     "edgeColor": "#5B1D0F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "218": {
     "fillColor": "#8E5597",
     "edgeColor": "#6E4275",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "219": {
     "fillColor": "#564E9D",
     "edgeColor": "#423C7B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "220": {
     "fillColor": "#9195CA",
     "edgeColor": "#6E73B9",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "225": {
     "fillColor": "#FAA964",
     "edgeColor": "#F88F34",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "226": {
     "fillColor": "#FFEC6C",
     "edgeColor": "#FFE438",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "227": {
     "fillColor": "#B5D96C",
     "edgeColor": "#86B22E",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "231": {
     "fillColor": "#FCB76D",
     "edgeColor": "#FA860A",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "232": {
     "fillColor": "#77C9D8",
     "edgeColor": "#51B9CC",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "234": {
     "fillColor": "#FBE890",
     "edgeColor": "#F7D22B",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "256": {
     "fillColor": "#1B2A34",
     "edgeColor": "#000000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "272": {
     "fillColor": "#19325A",
     "edgeColor": "#244884",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "273": {
     "fillColor": "#1E5AA8",
     "edgeColor": "#0E2B52",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "284": {
     "fillColor": "#C281A5",
     "edgeColor": "#944771",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "285": {
     "fillColor": "#7DC291",
     "edgeColor": "#46955D",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "288": {
     "fillColor": "#00451A",
     "edgeColor": "#007A2E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "293": {
     "fillColor": "#6BABE4",
     "edgeColor": "#247BC6",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "294": {
     "fillColor": "#BDC6AD",
     "edgeColor": "#8D9D72",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0.058823529411764705,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "295": {
     "fillColor": "#FF94C2",
     "edgeColor": "#FF60A5",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "296": {
     "fillColor": "#ADADAD",
     "edgeColor": "#C6C6C6",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "297": {
     "fillColor": "#AA7F2E",
     "edgeColor": "#805F23",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "300": {
     "fillColor": "#C27F53",
     "edgeColor": "#CF9A77",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "302": {
     "fillColor": "#AEE9EF",
     "edgeColor": "#59D1DE",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "308": {
     "fillColor": "#352100",
     "edgeColor": "#663E00",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "313": {
     "fillColor": "#ABD9FF",
     "edgeColor": "#7AC3FF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "315": {
     "fillColor": "#8C8C8C",
     "edgeColor": "#727272",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "316": {
     "fillColor": "#3E3C39",
     "edgeColor": "#22211F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "320": {
     "fillColor": "#720012",
     "edgeColor": "#A30018",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "321": {
     "fillColor": "#469BC3",
     "edgeColor": "#347FA1",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "322": {
     "fillColor": "#68C3E2",
     "edgeColor": "#3EB3DA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "323": {
     "fillColor": "#D3F2EA",
     "edgeColor": "#ACE6D7",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "324": {
     "fillColor": "#B40000",
     "edgeColor": "#4C0000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "326": {
     "fillColor": "#E2F99A",
     "edgeColor": "#D3F669",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "329": {
     "fillColor": "#F5F3D7",
     "edgeColor": "#E0DA85",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0.058823529411764705,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "330": {
     "fillColor": "#77774E",
     "edgeColor": "#59593A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "332": {
     "fillColor": "#D06D4F",
     "edgeColor": "#DA8D76",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "333": {
     "fillColor": "#DBEA7A",
     "edgeColor": "#E7F1A6",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "334": {
     "fillColor": "#DFC176",
     "edgeColor": "#C2982E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "335": {
     "fillColor": "#88605E",
     "edgeColor": "#694A49",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "339": {
     "fillColor": "#C0FF00",
     "edgeColor": "#739900",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "341": {
     "fillColor": "#F08F1C",
     "edgeColor": "#9E5C0A",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "342": {
     "fillColor": "#3E3C39",
     "edgeColor": "#575450",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "346": {
     "fillColor": "#803D07",
     "edgeColor": "#4D2504",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 2
+    "finishType": 2,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "350": {
     "fillColor": "#D67923",
     "edgeColor": "#7F4814",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "351": {
     "fillColor": "#F785B1",
     "edgeColor": "#F45793",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "353": {
     "fillColor": "#FF6D77",
     "edgeColor": "#FF3845",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "360": {
     "fillColor": "#FCFCFC",
     "edgeColor": "#C9C9C9",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "362": {
     "fillColor": "#AEE9EF",
     "edgeColor": "#59D1DE",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "363": {
     "fillColor": "#635F52",
     "edgeColor": "#2A2823",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "364": {
     "fillColor": "#DF6695",
     "edgeColor": "#B9275F",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "365": {
     "fillColor": "#671F81",
     "edgeColor": "#441456",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "366": {
     "fillColor": "#D86D2C",
     "edgeColor": "#B05720",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "367": {
     "fillColor": "#237841",
     "edgeColor": "#174F2B",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "368": {
     "fillColor": "#EDFF21",
     "edgeColor": "#D7EA00",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "370": {
     "fillColor": "#755945",
     "edgeColor": "#533F31",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "371": {
     "fillColor": "#CCA373",
     "edgeColor": "#BF8A4E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "373": {
     "fillColor": "#75657D",
     "edgeColor": "#594D60",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "375": {
     "fillColor": "#8A928D",
     "edgeColor": "#585F5A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "376": {
     "fillColor": "#F5CD2F",
     "edgeColor": "#B49208",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "378": {
     "fillColor": "#708E7C",
     "edgeColor": "#597263",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "379": {
     "fillColor": "#70819A",
     "edgeColor": "#58677D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "383": {
     "fillColor": "#CECECE",
     "edgeColor": "#9C9C9C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 1
+    "finishType": 1,
+    "materialArgs": {
+      "roughness": 0,
+      "metalness": 1
+    }
   },
   "402": {
     "fillColor": "#CA4C0B",
     "edgeColor": "#9B3908",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "406": {
     "fillColor": "#19325A",
     "edgeColor": "#03060C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "422": {
     "fillColor": "#915C3C",
     "edgeColor": "#6B452D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "423": {
     "fillColor": "#543F33",
     "edgeColor": "#32261F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "424": {
     "fillColor": "#DD9E47",
     "edgeColor": "#CA8525",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "430": {
     "fillColor": "#F79B9B",
     "edgeColor": "#F36C6C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "431": {
     "fillColor": "#665EA7",
     "edgeColor": "#514A86",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "449": {
     "fillColor": "#671F81",
     "edgeColor": "#240A2D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "450": {
     "fillColor": "#D27744",
     "edgeColor": "#B8602C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "462": {
     "fillColor": "#F58624",
     "edgeColor": "#DB6B0A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "484": {
     "fillColor": "#91501C",
     "edgeColor": "#663913",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "490": {
     "fillColor": "#A5CA18",
     "edgeColor": "#5A6D0C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "493": {
     "fillColor": "#656761",
     "edgeColor": "#7E8079",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "494": {
     "fillColor": "#D0D0D0",
     "edgeColor": "#EAEAEA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "495": {
     "fillColor": "#AE7A59",
     "edgeColor": "#BF967D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "496": {
     "fillColor": "#969696",
     "edgeColor": "#636363",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "503": {
     "fillColor": "#BCB4A5",
     "edgeColor": "#A69B86",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "504": {
     "fillColor": "#898788",
     "edgeColor": "#545354",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "507": {
     "fillColor": "#FA9C1C",
     "edgeColor": "#E08504",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "508": {
     "fillColor": "#C65127",
     "edgeColor": "#993F1E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "509": {
     "fillColor": "#CF8A47",
     "edgeColor": "#B6722F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "510": {
     "fillColor": "#ACE35A",
     "edgeColor": "#95DB2D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "511": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#C1C1C1",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10002": {
     "fillColor": "#00852B",
     "edgeColor": "#001E09",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10003": {
     "fillColor": "#069D9F",
     "edgeColor": "#023A3B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10005": {
     "fillColor": "#D3359D",
     "edgeColor": "#851D61",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10008": {
     "fillColor": "#545955",
     "edgeColor": "#222423",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10010": {
     "fillColor": "#58AB41",
     "edgeColor": "#316024",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10015": {
     "fillColor": "#FFF230",
     "edgeColor": "#F9E900",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10017": {
     "fillColor": "#FF9494",
     "edgeColor": "#FF6060",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10019": {
     "fillColor": "#D7BA8C",
     "edgeColor": "#BC8D42",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10022": {
     "fillColor": "#D05098",
     "edgeColor": "#B9317E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10026": {
     "fillColor": "#901F76",
     "edgeColor": "#3A0C30",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10028": {
     "fillColor": "#897D62",
     "edgeColor": "#4D4637",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10029": {
     "fillColor": "#FF9ECD",
     "edgeColor": "#FF3898",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10030": {
     "fillColor": "#A06EB9",
     "edgeColor": "#6C3E82",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10031": {
     "fillColor": "#CDA4DE",
     "edgeColor": "#A35AC3",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10035": {
     "fillColor": "#56E646",
     "edgeColor": "#27AF18",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10036": {
     "fillColor": "#C91A09",
     "edgeColor": "#660D05",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10043": {
     "fillColor": "#AEE9EF",
     "edgeColor": "#59D1DE",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10045": {
     "fillColor": "#97CBD9",
     "edgeColor": "#BBDDE6",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "10046": {
     "fillColor": "#AD659A",
     "edgeColor": "#BF86B0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "10047": {
     "fillColor": "#FFFFFF",
     "edgeColor": "#FFFFFF",
     "alpha": 0.06274509803921569,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10049": {
     "fillColor": "#FECCCF",
     "edgeColor": "#FFFFFF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 5
+    "finishType": 5,
+    "materialArgs": {
+      "roughness": 0.2,
+      "metalness": 0.85
+    }
   },
   "10057": {
     "fillColor": "#F08F1C",
     "edgeColor": "#9E5C0A",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10070": {
     "fillColor": "#5F3109",
     "edgeColor": "#2E1804",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10072": {
     "fillColor": "#646464",
     "edgeColor": "#494949",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10073": {
     "fillColor": "#7396C8",
     "edgeColor": "#3B639A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10078": {
     "fillColor": "#FFC995",
     "edgeColor": "#FF922D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10079": {
     "fillColor": "#EEEEEE",
     "edgeColor": "#BABABA",
     "alpha": 0.9411764705882353,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10084": {
     "fillColor": "#AA7D55",
     "edgeColor": "#654A33",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10085": {
     "fillColor": "#441A91",
     "edgeColor": "#1C0A3C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10092": {
     "fillColor": "#BB805A",
     "edgeColor": "#7B4F32",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10135": {
     "fillColor": "#A0A0A0",
     "edgeColor": "#6D6D6D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10137": {
     "fillColor": "#5B7590",
     "edgeColor": "#334151",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10147": {
     "fillColor": "#83724F",
     "edgeColor": "#423A28",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10148": {
     "fillColor": "#484D48",
     "edgeColor": "#161716",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10150": {
     "fillColor": "#989B99",
     "edgeColor": "#B1B3B2",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10151": {
     "fillColor": "#C8C8C8",
     "edgeColor": "#E0E0E0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10189": {
     "fillColor": "#AC8247",
     "edgeColor": "#654C29",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10191": {
     "fillColor": "#FCAC00",
     "edgeColor": "#936500",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10200": {
     "fillColor": "#708224",
     "edgeColor": "#2D340E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10212": {
     "fillColor": "#9DC3F7",
     "edgeColor": "#3D87EF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10226": {
     "fillColor": "#FFEC6C",
     "edgeColor": "#FFDD05",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10288": {
     "fillColor": "#00451A",
     "edgeColor": "#001407",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10297": {
     "fillColor": "#AA7F2E",
     "edgeColor": "#584118",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10308": {
     "fillColor": "#352100",
     "edgeColor": "#000000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10320": {
     "fillColor": "#720012",
     "edgeColor": "#3D0009",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10321": {
     "fillColor": "#469BC3",
     "edgeColor": "#27607B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10322": {
     "fillColor": "#68C3E2",
     "edgeColor": "#2499C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10323": {
     "fillColor": "#D3F2EA",
     "edgeColor": "#85DAC5",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10326": {
     "fillColor": "#E2F99A",
     "edgeColor": "#C4F339",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10330": {
     "fillColor": "#77774E",
     "edgeColor": "#59593A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10351": {
     "fillColor": "#56E646",
     "edgeColor": "#27AF18",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10366": {
     "fillColor": "#0020A0",
     "edgeColor": "#000B38",
     "alpha": 0.7843137254901961,
-    "isTransparent": true,
     "luminance": 0.0196078431372549,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10375": {
     "fillColor": "#212121",
     "edgeColor": "#545454",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "10378": {
     "fillColor": "#708E7C",
     "edgeColor": "#43554A",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "10484": {
     "fillColor": "#91501C",
     "edgeColor": "#3B210B",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 3
+    "finishType": 3,
+    "materialArgs": {
+      "roughness": 0.9,
+      "metalness": 0
+    }
   },
   "11015": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#C1C1C1",
     "alpha": 0.6823529411764706,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "11019": {
     "fillColor": "#D7BA8C",
     "edgeColor": "#BC8D41",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20000": {
     "fillColor": "#1B2A34",
     "edgeColor": "#080D10",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20001": {
     "fillColor": "#1E5AA8",
     "edgeColor": "#16437D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20002": {
     "fillColor": "#00852B",
     "edgeColor": "#005119",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20004": {
     "fillColor": "#B40000",
     "edgeColor": "#7F0000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20006": {
     "fillColor": "#543324",
     "edgeColor": "#311E15",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20007": {
     "fillColor": "#8A928D",
     "edgeColor": "#707974",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20010": {
     "fillColor": "#58AB41",
     "edgeColor": "#448532",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20014": {
     "fillColor": "#FAC80A",
     "edgeColor": "#CCA404",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20015": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#DBDBDB",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20019": {
     "fillColor": "#D7BA8C",
     "edgeColor": "#C9A468",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20022": {
     "fillColor": "#671F81",
     "edgeColor": "#441456",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20028": {
     "fillColor": "#897D62",
     "edgeColor": "#6B624C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20070": {
     "fillColor": "#5F3109",
     "edgeColor": "#2E1804",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20071": {
     "fillColor": "#969696",
     "edgeColor": "#7C7C7C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20072": {
     "fillColor": "#646464",
     "edgeColor": "#494949",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20086": {
     "fillColor": "#7B5D41",
     "edgeColor": "#5A442F",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20288": {
     "fillColor": "#00451A",
     "edgeColor": "#001407",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20320": {
     "fillColor": "#720012",
     "edgeColor": "#3D0009",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20335": {
     "fillColor": "#88605E",
     "edgeColor": "#694A49",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "20500": {
     "fillColor": "#F8F3E4",
     "edgeColor": "#EDE0BA",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30000": {
     "fillColor": "#FCFCFC",
     "edgeColor": "#C9C9C9",
     "alpha": 0.5019607843137255,
-    "isTransparent": true,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30001": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#DBDBDB",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30002": {
     "fillColor": "#8A928D",
     "edgeColor": "#707974",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30003": {
     "fillColor": "#34434D",
     "edgeColor": "#1E272D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30004": {
     "fillColor": "#D27744",
     "edgeColor": "#B8602C",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30005": {
     "fillColor": "#D7BA8C",
     "edgeColor": "#C9A468",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30006": {
     "fillColor": "#FED557",
     "edgeColor": "#FDC724",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30007": {
     "fillColor": "#7C9051",
     "edgeColor": "#5F6E3E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30008": {
     "fillColor": "#467083",
     "edgeColor": "#335260",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30009": {
     "fillColor": "#907450",
     "edgeColor": "#6F5A3D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30010": {
     "fillColor": "#B40000",
     "edgeColor": "#7F0000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30011": {
     "fillColor": "#ABD9FF",
     "edgeColor": "#7AC3FF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30012": {
     "fillColor": "#D86D2C",
     "edgeColor": "#B05720",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30013": {
     "fillColor": "#C65127",
     "edgeColor": "#993F1E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30014": {
     "fillColor": "#78FC78",
     "edgeColor": "#46FB46",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30015": {
     "fillColor": "#FFF230",
     "edgeColor": "#F9E900",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30016": {
     "fillColor": "#F785B1",
     "edgeColor": "#F45793",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30032": {
     "fillColor": "#AFB5C7",
     "edgeColor": "#8F98B1",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30033": {
     "fillColor": "#F45C40",
     "edgeColor": "#F0300E",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30034": {
     "fillColor": "#27867E",
     "edgeColor": "#1B5E59",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30035": {
     "fillColor": "#FFE371",
     "edgeColor": "#FFD83D",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30037": {
     "fillColor": "#BD7D85",
     "edgeColor": "#AC5C65",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30038": {
     "fillColor": "#61AFFF",
     "edgeColor": "#2D96FF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30039": {
     "fillColor": "#F7AD63",
     "edgeColor": "#F49333",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30040": {
     "fillColor": "#595D60",
     "edgeColor": "#3F4244",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30054": {
     "fillColor": "#330000",
     "edgeColor": "#660000",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30080": {
     "fillColor": "#F4F4F4",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30081": {
     "fillColor": "#34434D",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30082": {
     "fillColor": "#595D60",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30083": {
     "fillColor": "#9C9C9C",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30084": {
     "fillColor": "#006400",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30085": {
     "fillColor": "#7DB538",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30086": {
     "fillColor": "#0057A6",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30087": {
     "fillColor": "#68AECE",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30088": {
     "fillColor": "#4B0082",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30089": {
     "fillColor": "#8B0000",
     "edgeColor": "#808080",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30090": {
     "fillColor": "#FED557",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "30091": {
     "fillColor": "#F7AD63",
     "edgeColor": "#C0C0C0",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "31000": {
     "fillColor": "#6B5A5A",
     "edgeColor": "#504343",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "31001": {
     "fillColor": "#0057A6",
     "edgeColor": "#003C75",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   },
   "31002": {
     "fillColor": "#D9D5CC",
     "edgeColor": "#C4BEAF",
     "alpha": 1,
-    "isTransparent": false,
     "luminance": 0,
-    "finishType": 0
+    "finishType": 0,
+    "materialArgs": {
+      "roughness": 0.3,
+      "metalness": 0.25
+    }
   }
 }

@@ -1,4 +1,11 @@
 import * as THREE from 'three';
+import {
+    type ColorDef,
+    type ColorsMap, FINISH_TYPE_CHROME,
+    FINISH_TYPE_DEFAULT, FINISH_TYPE_MATTE_METALLIC, FINISH_TYPE_METAL,
+    FINISH_TYPE_PEARLESCENT, FINISH_TYPE_RUBBER,
+    type PartDef
+} from "./ldraw-primitives.mjs";
 
 export type RGB = [number, number, number];
 export type FileContent = (string | number)[][];
@@ -7,51 +14,34 @@ export type FileContent = (string | number)[][];
 const DB_URL = "https://raw.githubusercontent.com/ziv/ldr/refs/heads/main/ldrawdb/";
 const USE_PARENT_COLOR = 0;
 
+// helpers
 
-/**
- * Fetch part from remote server or persistent cache
- * @param name
- */
-async function fetchPart(name: string): Promise<FileContent> {
-    // replace the suffix
-    name = name.replace(".dat", ".json");
-
-    // ldraw search pattern
-    if (name.startsWith('8') || name.startsWith('48')) {
-        name = `p/${name}`;
-    }
-    if (name.startsWith('s/')) {
-        name = `parts/${name}`;
-    }
-
-    const data = localStorage.getItem(`HTTP_CACHE:${name}`);
+const fetchPart = async <T>(name: string) => {
+    // first get from cache if available
+    let data = localStorage.getItem(`cache:${name}`);
     if (data) {
         return JSON.parse(data);
     }
 
-    const candidates = [
-        name,
-        `parts/${name}`,
-        `parts/s/${name}`,
-        `p/${name}`,
-        `p/8/${name}`,
-        `p/48/${name}`,
-    ]
-
-    for (const candidate of candidates) {
-        const res = await fetch(DB_URL + candidate);
-        if (!res.ok || res.status !== 200) {
-            continue;
-        }
-        const text = await res.text();
-        localStorage.setItem(`HTTP_CACHE:${name}`, text);
-        return JSON.parse(text);
+    const r = await fetch(DB_URL + name);
+    if (!r.ok) {
+        throw new Error(`Failed to fetch "${name}"`);
     }
-    throw new Error('Part not found, aborting.');
+
+    data = await r.json();
+    localStorage.setItem(`HTTP_CACHE:${name}`, JSON.stringify(data));
+    return data as T;
 }
 
+
 export class LdrawJsLoader {
-    readonly fetchCache = new Map<string, Promise<FileContent>>();
+    static colorsLoaded = false;
+    static colorsMap: ColorsMap = {};
+
+    readonly fetchCache = new Map<string, Promise<PartDef>>();
+    readonly materialsCache = new Map<string, THREE.MeshStandardMaterial>();
+
+
     readonly loading = {
         loaded: 0,
         total: 0,
@@ -71,17 +61,42 @@ export class LdrawJsLoader {
         return [255, 0, 255];
     }
 
+    material(code: string) {
+        // cache first
+        if (this.materialsCache.has(code)) {
+            return this.materialsCache.get(code)!.clone();
+        }
+
+        const def = LdrawJsLoader.colorsMap[code] as ColorDef;
+        const material = new THREE.MeshStandardMaterial(def.materialArgs);
+
+        material.color.setStyle(def.fillColor, THREE.SRGBColorSpace);
+        material.transparent = def.alpha < 1;
+        material.opacity = def.alpha;
+        material.depthWrite = !material.transparent;
+        material.polygonOffset = true;
+        material.polygonOffsetFactor = 1;
+    }
+
     async load(partName: string, parentColor = USE_PARENT_COLOR): Promise<THREE.Group> {
-        this.loading.total++;
+        // make sure colors is loaded, happened once
+        if (!LdrawJsLoader.colorsLoaded) {
+            LdrawJsLoader.colorsMap = await fetchPart<ColorsMap>("colors.json");
+        }
+
         // we keep the promises to ensure we don't fetch the same part multiple times in parallel
         // the promise is enough since it marked the data as fetched even if it's not ready yet
         let partPromise = this.fetchCache.get(partName);
         if (!partPromise) {
-            partPromise = fetchPart(partName);
+            partPromise = fetchPart<PartDef>(partName);
             this.fetchCache.set(partName, partPromise);
         }
 
         const data = await partPromise;
+
+        // map missing data (browser items)
+
+
         const group = new THREE.Group();
 
         const facesPositions: number[] = [];
