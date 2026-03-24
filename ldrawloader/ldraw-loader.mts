@@ -50,24 +50,6 @@ async function fetchPart(name: string): Promise<FileContent> {
     throw new Error('Part not found, aborting.');
 }
 
-class LineParser {
-    parts: string[] = [];
-    pointer = -1
-
-    constructor(readonly line: string) {
-        this.parts = line.split(/\s+/);
-    }
-
-    next() {
-        this.pointer++;
-        if (this.pointer === this.parts.length) {
-            // reach the end
-            return null;
-        }
-        return this.parts[this.pointer];
-    }
-}
-
 export class LdrawJsLoader {
     readonly fetchCache = new Map<string, Promise<FileContent>>();
     readonly loading = {

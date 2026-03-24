@@ -31,6 +31,10 @@ export class LineParser {
         }
     }
 
+    int() {
+        return parseInt(this.next(), 10);
+    }
+
 
     vector() {
         return [
