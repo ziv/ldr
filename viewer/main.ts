@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {LdrawJsLoader, type RGB} from "../ldrawloader/ldraw-loader.mjs";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls.js";
-import { Colors} from "./sample.mjs";
+import {Colors} from "./sample.mjs";
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xeeeeee);
@@ -26,10 +26,15 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
 directionalLight.position.set(1, 1.2, 0.5).normalize();
 scene.add(directionalLight);
 
-const loader =  new LdrawJsLoader(Colors);
+const loader = new LdrawJsLoader(Colors);
 const g = await loader.load("car.dat", 1);
 
+// window.setInterval(() => {
+//     console.log(`Loaded ${loader.loading.loaded} of ${loader.loading.total}`, loader.loading.loaded / loader.loading.total);
+// }, 1000);
+
 g.rotation.x = Math.PI;
+g.rotation.y = Math.PI / 4;
 scene.add(g);
 centerModel(g);
 // const geometry = new THREE.BoxGeometry(1, 1, 1);

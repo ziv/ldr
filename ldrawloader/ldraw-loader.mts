@@ -13,7 +13,16 @@ const USE_PARENT_COLOR = 0;
  * @param name
  */
 async function fetchPart(name: string): Promise<FileContent> {
+    // replace the suffix
     name = name.replace(".dat", ".json");
+
+    // ldraw search pattern
+    if (name.startsWith('8') || name.startsWith('48')) {
+        name = `p/${name}`;
+    }
+    if (name.startsWith('s/')) {
+        name = `parts/${name}`;
+    }
 
     const data = localStorage.getItem(`HTTP_CACHE:${name}`);
     if (data) {
@@ -28,6 +37,7 @@ async function fetchPart(name: string): Promise<FileContent> {
         `p/8/${name}`,
         `p/48/${name}`,
     ]
+
     for (const candidate of candidates) {
         const res = await fetch(DB_URL + candidate);
         if (!res.ok || res.status !== 200) {
@@ -40,17 +50,39 @@ async function fetchPart(name: string): Promise<FileContent> {
     throw new Error('Part not found, aborting.');
 }
 
+class LineParser {
+    parts: string[] = [];
+    pointer = -1
+
+    constructor(readonly line: string) {
+        this.parts = line.split(/\s+/);
+    }
+
+    next() {
+        this.pointer++;
+        if (this.pointer === this.parts.length) {
+            // reach the end
+            return null;
+        }
+        return this.parts[this.pointer];
+    }
+}
+
 export class LdrawJsLoader {
     readonly fetchCache = new Map<string, Promise<FileContent>>();
+    readonly loading = {
+        loaded: 0,
+        total: 0,
+    };
 
     constructor(readonly colors: Record<number, RGB>) {
     }
 
     // todo rebuild colors database and add edges
-    color(id: number, parent: number): RGB {
-        if (id === 16) {
-            return this.colors[parent] as RGB;
-        }
+    color(id: number): RGB {
+        // if (id === 16 || id === 24) {
+        //     return this.colors[parent] as RGB;
+        // }
         if (id in this.colors) {
             return this.colors[id] as RGB;
         }
@@ -58,6 +90,7 @@ export class LdrawJsLoader {
     }
 
     async load(partName: string, parentColor = USE_PARENT_COLOR): Promise<THREE.Group> {
+        this.loading.total++;
         // we keep the promises to ensure we don't fetch the same part multiple times in parallel
         // the promise is enough since it marked the data as fetched even if it's not ready yet
         let partPromise = this.fetchCache.get(partName);
@@ -83,7 +116,8 @@ export class LdrawJsLoader {
 
         for (const line of data) {
             const type = line[0] as number;
-            const color = line[1] as number;
+            const partColor = line[1] as number;
+            const color = partColor === 16 || partColor === 24 ? parentColor : partColor;
             if (0 === type) {
                 // todo handle BFC
                 continue;
@@ -154,7 +188,7 @@ export class LdrawJsLoader {
         if (facesPositions.length > 0) {
             const geometry = new THREE.BufferGeometry();
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(facesPositions), 3));
-            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => this.color(c, parentColor)).flat()), 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(facesColors.map(c => this.color(c)).flat()), 3));
 
             geometry.computeVertexNormals();
 
@@ -173,7 +207,7 @@ export class LdrawJsLoader {
 
             // todo colors should come from edges
             lineGeometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(linePositions), 3));
-            lineGeometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(lineColors.map(c => [255, 0, 255]).flat()), 3));
+            lineGeometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(lineColors.map(c => [0, 0, 0]).flat()), 3));
 
             const lineMaterial = new THREE.LineBasicMaterial({
                 vertexColors: true,
@@ -183,6 +217,26 @@ export class LdrawJsLoader {
             const lineSegments = new THREE.LineSegments(lineGeometry, lineMaterial);
             group.add(lineSegments);
         }
+
+        if (optionalsPositions.length > 0) {
+            const optionalGeometry = new THREE.BufferGeometry();
+
+            // todo colors should come from edges
+            optionalGeometry.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(optionalsPositions), 3));
+            optionalGeometry.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(optionalColors.map(() => [0, 255, 0]).flat()), 3));
+            optionalGeometry.setAttribute('control', new THREE.Float32BufferAttribute(new Float32Array(optionalsControls), 3));
+
+            const lineMaterial = new THREE.LineBasicMaterial({
+                vertexColors: true,
+                side: THREE.DoubleSide,
+                linewidth: 1
+            });
+
+            const lineSegments = new THREE.LineSegments(optionalGeometry, lineMaterial);
+            group.add(lineSegments);
+        }
+
+        this.loading.loaded++;
         return group;
     }
 }
