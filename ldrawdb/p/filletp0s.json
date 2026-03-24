@@ -1,0 +1,1 @@
+{"type":"Primitive","faces":[],"lines":[{"colorCode":"24","vertices":[[-12,0,-1.5],[12,0,-1.5]]},{"colorCode":"24","vertices":[[-12,0,1.5],[12,0,1.5]]}],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[12,0,0],[0,20,0],[0,0,1.5]],"fileName":"p/box3u10p.json","inverted":false}],"totalFaces":0}

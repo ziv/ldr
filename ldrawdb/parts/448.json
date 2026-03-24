@@ -1,0 +1,1 @@
+{"type":"Part","faces":[{"colorCode":"16","vertices":[[-384,-183,-248],[-384,0,-244],[384,0,-244],[384,-183,-248]]},{"colorCode":"16","vertices":[[384,-183,248],[384,0,244],[-384,0,244],[-384,-183,248]]}],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"parts/s/448s02.json","inverted":false}],"totalFaces":4}

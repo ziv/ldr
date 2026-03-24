@@ -1,0 +1,1 @@
+{"type":"Subpart","faces":[{"colorCode":"16","vertices":[[-6.2,0,-6.6],[6.2,0,-6.6],[6.2,0,0],[-6.2,0,0]]},{"colorCode":"16","vertices":[[-6.2,0,0],[6.2,0,0],[0,0,4.8]]},{"colorCode":"16","vertices":[[0,0,4.8],[-10,0,0],[-6.2,0,0]]},{"colorCode":"16","vertices":[[6.2,0,0],[10,0,0],[0,0,4.8]]}],"lines":[],"conditionalLines":[],"subObjects":[],"totalFaces":5}

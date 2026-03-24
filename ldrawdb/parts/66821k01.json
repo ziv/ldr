@@ -1,0 +1,1 @@
+{"type":"Part","faces":[],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[0,0,-1],[0,1,0],[1,0,0]],"fileName":"p/stug-2x1.json","inverted":false},{"colorCode":"16","vertices":[[0,2.25,-6],[22.5,0,0],[0,0,2.25],[0,12,0]],"fileName":"p/box4o8a.json","inverted":false}],"totalFaces":0}

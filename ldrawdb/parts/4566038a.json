@@ -1,0 +1,1 @@
+{"type":"Part","faces":[],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[8,0,0],[0,-0.25,0],[0,0,8]],"fileName":"p/4-4cylc3.json","inverted":false},{"colorCode":"4","vertices":[[0,-0.25,0],[8,0,0],[0,1,0],[0,0,8]],"fileName":"p/4-4disc.json","inverted":false}],"totalFaces":0}

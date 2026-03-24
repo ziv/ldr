@@ -1,0 +1,1 @@
+{"type":"Subpart","faces":[{"colorCode":"16","vertices":[[-38,-15.6,10],[38,-15.6,10],[40,-13.6,10],[-40,-13.6,10]]},{"colorCode":"16","vertices":[[-40,-1,10],[-40,-13.6,10],[40,-13.6,10],[40,-1,10]]}],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"parts/s/7835s02.json","inverted":false}],"totalFaces":4}

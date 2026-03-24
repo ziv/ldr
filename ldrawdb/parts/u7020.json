@@ -1,0 +1,1 @@
+{"type":"Part","faces":[{"colorCode":"16","vertices":[[18.75,0,6.25],[-18.75,0,6.25],[-18.75,0,-6.25],[18.75,0,-6.25]]}],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"parts/s/u7020s01.json","inverted":false}],"totalFaces":2}

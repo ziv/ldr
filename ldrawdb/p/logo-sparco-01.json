@@ -1,0 +1,1 @@
+{"type":"Primitive","faces":[],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"0","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"p/logo-sparco-text.json","inverted":false},{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"p/logo-sparco-text-outerbox.json","inverted":false}],"totalFaces":0}

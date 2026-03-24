@@ -1,19 +1,27 @@
 #!/usr/bin/env tsx
 import * as fs from "node:fs";
 import * as process from "node:process";
-import * as path from "node:path";
+import {LineParser} from "./utils/line-parser.mjs";
+import {normalizeFilename} from "./utils/normalize-filename.mjs";
+import {walk} from "./utils/walk.mjs";
 
-async function* walk(dir: string): AsyncGenerator<string> {
-    for await (const d of await fs.promises.opendir(dir)) {
-        const entry = path.join(dir, d.name);
-        if (d.isDirectory()) yield* walk(entry);
-        else if (d.isFile()) yield entry;
-    }
+type LineSegment = {
+    colorCode: string;
+    vertices: number[][];
+};
+
+type ConditionalLineSegment = LineSegment & {
+    controlPoints: number[][];
 }
 
-const BFC_CCW = 0;
-const BFC_CW = 1;
-const BFC_INVERTNEXT = 2;
+type FaceSegment = LineSegment & {
+}
+
+type SubObject = LineSegment & {
+    fileName: string;
+    inverted: boolean;
+}
+
 
 // those directories should exist before running the script, and the script will create missing subdirectories as needed.
 const src = "db"
@@ -41,73 +49,142 @@ for await (const file of walk(src)) {
     if (!file.endsWith('.dat')) continue;
 
     const raw = fs.readFileSync(file, 'utf-8');
-    const lines = raw
+    const activeLines = raw
         .replace(/\r\n/g, '\n')            // align new lines characters
         .split('\n')                       // split to lines
         .map(line => line.trim())   // trim spaces
         .filter(Boolean);                  // remove empty lines
 
-    const output: (number | string)[][] = [];
+    let type = 'Model';
+    let bfcCCW = true;
+    let bfcInverted = false;
+    let totalFaces = 0;
 
-    for (const l of lines) {
-        const type = l.substring(0, 1);
-        const line = l.substring(1).trim();
+    const faces: FaceSegment[] = [];
+    const lines: LineSegment[] = [];
+    const conditionalLines: ConditionalLineSegment[] = [];
+    const subObjects: SubObject[] = [];
 
 
-        // todo complete handling 0 line (colors, etc.)
-        if ('0' === type) {
-            if ('BFC CERTIFY CCW' === line)
-                output.push([0, BFC_CCW]);
 
-            else if ('BFC CERTIFY CW' === line)
-                output.push([0, BFC_CW]);
+    for (const l of activeLines) {
+        const parser = new LineParser(l);
+        const lineType = parser.next()
 
-            else if ('BFC INVERTNEXT' === line)
-                output.push([0, BFC_INVERTNEXT]);
+        let colorCode: string;
+        let vertices: number[][];
 
-            continue;
-        }
+        switch (lineType) {
+            case "0":
+                const meta = parser.next();
+                switch (meta) {
+                    case "!LDRAW_ORG":
+                        type = parser.next();
+                        break;
 
-        const parts = line.split(/\s+/);
-        const color = parseInt(parts[0] as string, 10);
+                    case "BFC":
+                        for (const token of parser.it()) {
+                            switch (token) {
+                                case "CW":
+                                case "CCW":
+                                    bfcCCW = token === "CCW";
+                                    break;
 
-        if ('1' === type) {
-            output.push([
-                1,
-                color,
-                ...parts.slice(1, 13).map(parseFloat),  // 12 floats
-                parts[13] as string,                    // file name (as string)
-            ]);
-        } else if ('2' === type) {
-            output.push([
-                2,
-                color,
-                ...parts.slice(1, 7).map(parseFloat),   // 6 floats
-            ]);
-        } else if ('3' === type) {
-            output.push([
-                3,
-                color,
-                ...parts.slice(1, 10).map(parseFloat),  // 9 floats
-            ]);
-        } else if ('4' === type) {
-            output.push([
-                4,
-                color,
-                ...parts.slice(1, 13).map(parseFloat),  // 12 floats
-            ]);
-        } else if ('5' === type) {
-            output.push([
-                5,
-                color,
-                ...parts.slice(1, 13).map(parseFloat),  // 12 floats
-            ]);
+                                case "INVERTNEXT":
+                                    bfcInverted = true;
+                                    break;
+                            }
+                        }
+                }
+                break;
+            case "1":
+                colorCode = parser.next();
+                vertices = parser.vectors(4);
+                const fileName = normalizeFilename(parser.next());
+
+                subObjects.push({
+                    colorCode,
+                    vertices,
+                    fileName,
+                    inverted: bfcInverted,
+                });
+
+                // reset BFC behavior
+                bfcInverted = false;
+                break;
+            case "2":
+                colorCode = parser.next();
+                vertices = parser.vectors(2);
+
+                lines.push({
+                    colorCode,
+                    vertices
+                });
+                break;
+            case "3":
+                colorCode = parser.next();
+                vertices = parser.vectors(3);
+
+                if (!bfcCCW) {
+                    vertices.reverse();
+                }
+
+                faces.push({
+                    colorCode,
+                    vertices,
+                    // todo do we need those the DB?!
+                    // faceNormal: null,
+                    // normals: [null, null, null],
+                });
+                totalFaces += 1;
+
+                // todo handle double side (add another face in reverse order)
+
+                break;
+            case "4":
+                colorCode = parser.next();
+                vertices = parser.vectors(4);
+
+                if (!bfcCCW) {
+                    vertices.reverse();
+                }
+
+                faces.push({
+                    colorCode,
+                    vertices,
+                    // todo do we need those the DB?!
+                    // faceNormal: null,
+                    // normals: [null, null, null, null],
+                });
+                totalFaces += 2;
+                // todo handle double side (add another face in reverse order)
+                break;
+            case "5":
+                colorCode = parser.next();
+                vertices = parser.vectors(2);
+                const controlPoints = parser.vectors(2);
+
+                conditionalLines.push({
+                    colorCode,
+                    vertices,
+                    controlPoints,
+                });
+                break;
         }
     }
 
+    const data = {
+        type,
+        faces,
+        lines,
+        conditionalLines,
+        subObjects,
+        totalFaces,
+    };
+
     const jsonPath = file.replace(src, dst).replace('.dat', '.json');
-    // fs.mkdirSync(jsonPath.substring(0, jsonPath.lastIndexOf('/')), {recursive: true});
-    fs.writeFileSync(jsonPath, JSON.stringify(output));
+    fs.mkdirSync(jsonPath.substring(0, jsonPath.lastIndexOf('/')), {recursive: true});
+    fs.writeFileSync(jsonPath, JSON.stringify(data));
 
     if (++i % 100 === 0) process.stderr.write('.');
 }

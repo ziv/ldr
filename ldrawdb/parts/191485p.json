@@ -1,0 +1,1 @@
+{"type":"Part","faces":[{"colorCode":"0x237A1E8","vertices":[[-40,-0.25,4],[-40,-0.25,-4],[40,-0.25,-4],[40,-0.25,4]]}],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,-0.25,0],[40,0,0],[0,0.25,0],[0,0,4]],"fileName":"p/box5-12.json","inverted":false}],"totalFaces":2}

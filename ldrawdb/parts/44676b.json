@@ -1,0 +1,1 @@
+{"type":"Part","faces":[{"colorCode":"16","vertices":[[-2,20,50],[-2,40,50],[-2,40,11],[-2,0.5,11]]},{"colorCode":"16","vertices":[[2,0.5,11],[2,40,11],[2,40,50],[2,20,50]]}],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"parts/s/44676bs01.json","inverted":false}],"totalFaces":4}

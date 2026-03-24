@@ -1,0 +1,1 @@
+{"type":"Subpart","faces":[],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,0,0],[1,0,0],[0,1,0],[0,0,1]],"fileName":"parts/s/10830s03.json","inverted":false},{"colorCode":"16","vertices":[[0,0,-1.5],[13.5,0,0],[0,0,13.5],[0,2,0]],"fileName":"p/bump5000.json","inverted":false}],"totalFaces":0}

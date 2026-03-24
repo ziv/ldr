@@ -1,0 +1,1 @@
+{"type":"Primitive","faces":[{"colorCode":"16","vertices":[[-0.3827,0.3827,0.9239],[-0.3827,0,0.9239],[0,0,1]]}],"lines":[],"conditionalLines":[{"colorCode":"24","vertices":[[-0.3827,0,0.9239],[-0.3827,0.3827,0.9239]],"controlPoints":[[0,0,1],[-0.7654,0,0.7654]]}],"subObjects":[],"totalFaces":1}

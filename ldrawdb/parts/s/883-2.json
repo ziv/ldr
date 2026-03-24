@@ -1,0 +1,1 @@
+{"type":"Subpart","faces":[],"lines":[],"conditionalLines":[],"subObjects":[{"colorCode":"16","vertices":[[0,8,0],[20,0,0],[0,-8,0],[0,0,20]],"fileName":"p/box5.json","inverted":false},{"colorCode":"16","vertices":[[0,0,0],[0,0,1],[0,1,0],[-1,0,0]],"fileName":"p/stugel-2x2.json","inverted":false}],"totalFaces":0}
